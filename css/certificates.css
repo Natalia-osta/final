@@ -1,0 +1,15 @@
+.certificates{
+    background-color: var(--main-text-color);
+    padding: 10% 30px;
+    box-shadow: 0 0 15px rgba(0,0,0,1.2);
+}
+.certificates h2{
+    color: var(--second-color);
+}
+.certificates-block{
+    margin: 45px 0;
+    text-align: center;
+}
+.certificates-block img{
+    width: 70%;
+}

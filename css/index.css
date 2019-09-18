@@ -1,0 +1,53 @@
+
+@import url("header.css");
+@import url("footer.css");
+@import url("contact.css");
+@import url("about.css");
+@import url("certificates.css");
+@import url("gallery.css");
+@import url("spinner.css");
+@import url("product.css");
+
+:root {
+    --main-text-color: #fff;
+    --second-color: #333;
+    --extra-color: #999;
+    --main-font: 'Quicksand', sans-serif;
+    --h1-font:'Squada One', cursive;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+body{
+    font-family: var(--main-font);
+}
+h2{
+    font-family: var(--main-font);
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    color: var(--main-text-color);
+    margin: 0;
+}
+h1{
+    font-family: var(--h1-fontt);
+}
+.wrap{
+    max-width: 1140px;
+    margin: auto;
+}
+ main{
+    width: 100%;
+    margin-top: 100vh;
+    z-index: 10;
+ }
+
+@media (min-width: 540px) {
+    h2 {
+      font-size: 30px;
+    }
+}

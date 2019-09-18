@@ -1,0 +1,100 @@
+.gallery-index{
+     background-color: var(--second-color);
+     border-bottom: 1px solid var(--extra-color);
+     padding: 10% 30px;
+}
+.gallery-index-wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 15px;
+    margin: 45px 0;
+    transition: 0.6s all;
+}
+.gallery-index-block{
+    text-align: center;
+    padding: 10px 5px 20px 5px;
+    transition: .4s all;
+    transition: 0.6s all;
+}
+.gallery-index-block:hover {
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: .4s all;
+}
+.gallery-index-block .block img{
+    width: 100%;
+}
+.index-gllr-title{
+     color: var(--main-text-color);
+     text-transform: uppercase;
+     font-size: 12px;
+}
+.gallery-index h2{
+    margin: 0;
+    color: var(--main-text-color);
+}
+.index-gllr-rm{
+    display: inline-block;
+    width: 255px;
+    height: 38px;
+    color: var(--main-text-color);
+    border: 1px solid var(--main-text-color);
+    text-align: center;
+    line-height: 36px;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 15px;
+    transition: .3s linear;
+}
+.index-gllr-rm:hover{
+    color: var(--second-color);
+    background-color: var(--main-text-color);
+    transition: .3s linear;
+}
+.gallery-index p{
+    font-size: 14px;
+    font-family: var(--main-font);
+    color: var(--main-text-color);
+    text-align: center;
+}
+.gallery-button{
+    position: relative;
+    background: none;
+    width: 130px;
+    height: 30px;
+    border: none;
+    border-top: 1px solid #fff;
+    display: block;
+    color: #fff;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    cursor: pointer;
+}
+.gallery-button.hide{
+    display: none;
+    transition: 0.4 all;
+}
+.gallery-button::before{
+    position: absolute;
+    content:  "";
+    background: url("../img/icon/arrow.png");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    top: 25px;
+    left: 49px;
+}
+
+@media (min-width: 540px) {
+    .gallery-index-block:nth-child(5) {
+        display: none;
+    }
+    .index-gllr-rm{
+        width: 210px;
+
+    }
+}

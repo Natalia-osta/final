@@ -1,0 +1,121 @@
+.contact-container-grid{
+    display: grid;
+    margin: 45px 0;
+}
+.contact-index{
+    box-shadow: 0 0 15px rgba(0,0,0,1.2);
+    background-color:var(--second-color);
+    padding: 10% 30px;
+}
+.contact-input input:active, :hover, :focus{
+    outline: 0;
+    outline-offset: 0;
+}
+.contact-input{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+}
+.contact-input-style input, label, span{
+    display: block;
+}
+.contact-input-style input{
+    width: 100%;
+    height: 40px;
+    border:none;
+    color: var(--second-color);
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 5px;
+    transition: .4s all;
+}
+.contact-input-style input:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: .4s all;
+}
+.contact-input-style span{
+    font-size: 12px;
+    width: 80%;
+    margin: 0;
+    padding: 15px 0 20px 0;
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+}
+.contact-textarea-style span{
+    font-size: 12px;
+    margin: 0;
+    padding: 15px 0 20px 0;
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+    }
+.contact-textarea-style{
+    width: 100%;
+    color: var(--second-color);
+    margin: 0 auto;
+}
+.contact-textarea-style textarea{
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 5px;
+    transition: .4s all;
+}
+.contact-textarea-style textarea:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: .4s all;
+}
+.contact-send{
+    display: block;
+    width: 220px;
+    height: 45px;
+    border: 1px solid var(--main-text-color);
+    color: var(--main-text-color);
+    background-color: var(--second-color);
+    font-family: var(--main-font);
+    margin: 0 auto;
+}
+.contact-send:hover{
+    color: var(--second-color);
+    background-color: var(--main-text-color);
+    transition: .5s linear;
+}
+.block-address-contact{
+    color: var(--main-text-color);
+}
+.block-address-contact address ul li{
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.block-address-contact a{
+    display: block;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--main-text-color);
+}
+.block-address-contact a:hover{
+    color: #999;
+}
+.sacial-link{
+    margin-top: 15px;
+}
+
+
+@media (min-width: 540px) {
+    .contact-input {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 30px;
+    }
+    .contact-input-style span {
+      padding-bottom: 25px;
+    }
+}
+@media (min-width: 768px) {
+    .block-address-contact address ul li{
+      font-size: 14px;
+    }
+    .block-address-contact a{
+        font-size: 14px;
+    }
+} 
